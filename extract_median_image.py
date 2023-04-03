@@ -24,7 +24,7 @@ plt.imshow(bg, cmap='gray')
 '''
 get foreground from images 
 '''
-files = glob.glob('./objects/*jpeg')
+files = glob.glob('./objects/fg/*jpeg')
 
 # creating an array of frames from frames chosen above
 frames = []

@@ -2,11 +2,12 @@ import cv2
 import matplotlib.pyplot as plt
 import glob
 
-files = glob.glob('./objects/*jpeg')
-
+files = glob.glob('./objects/fg/*jpeg')
+fg = './objects/fg/2.jpeg'
+bg = './objects/bg/1.jpeg'
 # Load the image and the background
-image = cv2.imread(files[0], 0)
-background = cv2.imread(files[1], 0)
+image = cv2.imread(fg, 0)
+background = cv2.imread(bg, 0)
 
 plt.imshow(image, cmap='gray')
 plt.imshow(background, cmap='gray')
